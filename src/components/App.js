@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { categories } from './global/consts';
-import { randomInt } from './global/functions';
+import { categories } from '../global/consts';
+import { randomInt } from '../global/functions';
 import './App.css';
 
 const count = categories.length;
