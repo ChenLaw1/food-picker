@@ -27,7 +27,10 @@ class App extends Component {
   render() {
     const { primary, secondary } = categories[this.state.pick];
     const secondaryPick = (secondary) ? secondary[randomInt(secondary.length)] : '...';
-    const GOOGLE_SEARCH_URL = `https://www.google.com/search?q=${primary.replace(' ','+')}${(secondary) ? '+' + secondaryPick.replace(' ','+') : ''}+food+near+me`;
+    const GOOGLE_SEARCH_URL = 'https://www.google.com/search?q='+
+      primary.replace(' ','+') +
+      ((secondary) ? '+' + secondaryPick.replace(' ','+') : '') +
+      '+food+near+me';
     
     return (
       <div className="App">
