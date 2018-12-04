@@ -43,7 +43,7 @@ const categories = [
         secondary: null
     },
     {
-        primary: 'Barbaque',
+        primary: 'Barbecue',
         secondary: [
             'American',
             'Korean'

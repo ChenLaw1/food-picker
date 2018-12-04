@@ -1,6 +1,7 @@
 {
   "name": "food-picker",
   "version": "0.1.0",
+  "homepage": "/food-picker",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",

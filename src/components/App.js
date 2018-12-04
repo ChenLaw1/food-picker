@@ -34,15 +34,16 @@ class App extends Component {
     
     return (
       <div className="App">
-        <button className='randomizeBtn' onClick={this.randomize}>Random Pick</button>
-        <br />
-        <br />
+        <h1>Food Picker</h1>
+        <button className='randomizeBtn btn' onClick={this.randomize}>Random Pick</button>
+        <hr />
+        <div className='picks'>
         {primary}
         <br />
         {secondaryPick}
-        <br />
-        <br />
-        <a href={GOOGLE_SEARCH_URL} rel="noopener noreferrer" target="_blank">Google It</a>
+        </div>
+        <hr />
+        <a className='googleItBtn btn' href={GOOGLE_SEARCH_URL} rel="noopener noreferrer" target="_blank">Google It</a>
       </div>
     );
   }
